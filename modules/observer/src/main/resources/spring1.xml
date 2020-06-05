@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       " default-lazy-init="true">
+
+    <context:component-scan base-package="lin.xichun.observer_spring"/>
+
+    <!-- 任务执行器 -->
+    <!--定义任务执行器，需要配置SimpleApplicationEventMulticaster#taskExecutor属性，将任务执行器配置-->
+    <task:executor id="payment-status-update-thread" pool-size="10"/>
+
+    <!--需要注意的是实例化SimpleApplicationEventMulticaster时的名称必须为applicationEventMulticaster，是固定的，
+        因为在AbstractApplicationContext类中查找事件触发器是通过定义好的bean的名称查找。-->
+    <bean id="applicationEventMulticaster" class="org.springframework.context.event.SimpleApplicationEventMulticaster">
+        <property name="taskExecutor" ref="payment-status-update-thread"/>
+    </bean>
+
+</beans>
