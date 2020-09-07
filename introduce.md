@@ -5,6 +5,15 @@ Ralph Johnson 和 John Vlissides 合著（Addison-Wesley，1995）。这几位�
 GoF（“四人帮”，指Gamma, Helm, Johnson & Vlissides, Addison-Wesley四人）提出的23种设计模式可谓经典，由于其定义比较严谨趋于理论化，故刚
 开始不一定很快掌握，下面简要对23种设计模式予以简要介绍，并给出现实中相关的通俗易懂的事例：
 
+##七大设计原则： 
+- 1、单一职责原则【SINGLE RESPONSIBILITY PRINCIPLE】：一个类负责一项职责. 
+- 2、里氏替换原则【LISKOV SUBSTITUTION PRINCIPLE】：继承与派生的规则.（子类可替换父类） 
+- 3、依赖倒转原则【DEPENDENCE INVERSION PRINCIPLE】：高层模块不应该依赖低层模块，二者都应该依赖其抽象；抽象不应该依赖细节；细节应该依赖抽象。即针对接口编程，不要针对实现编程。 
+- 4、接口隔离原则【INTERFACE SEGREGATION PRINCIPLE】：建立单一接口，不要建立庞大臃肿的接口，尽量细化接口，接口中的方法尽量少。 
+- 5、迪米特法则【LOW OF DEMETER】：高内聚 低耦合 – high cohesion low coupling 
+- 6、开闭原则【OPEN CLOSE PRINCIPLE】：一个软件实体如类、模块和函数应该对扩展开放，对修改关闭。 
+- 7、组合/聚合复用原则【Composition/Aggregation Reuse Principle(CARP) 】：尽量使用组合和聚合少使用继承的关系来达到复用的原则。
+
 ##一、23种设计模式      
 - Abstract Factory 抽闲工厂模式——提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。 
 - Adapter 适配器模式—–将一个类的接口转换成客户希望的另外一个接口。Adapter模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。 
