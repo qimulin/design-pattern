@@ -1,4 +1,4 @@
-package lin.xichun.simple_factory;
+package lin.xichun.common;
 
 /**
  * 产品接口

@@ -1,4 +1,6 @@
-package lin.xichun.simple_factory;
+package lin.xichun.common;
+
+import lin.xichun.common.IProduct;
 
 /**
  * @author lin.xc

@@ -1,4 +1,4 @@
-package lin.xichun.simple_factory;
+package lin.xichun.factory_model;
 
 import lin.xichun.common.IProduct;
 
@@ -8,11 +8,12 @@ import lin.xichun.common.IProduct;
  **/
 public class Client {
     public static void main(String[] args) {
-        Factory factory = new Factory();
-        IProduct productA = factory.create("A");
+        IFactory factoryA = new FactoryA();
+        IProduct productA = factoryA.create();
         productA.productName();
 
-        IProduct productB = factory.create("B");
+        IFactory factoryB = new FactoryB();
+        IProduct productB = factoryB.create();
         productB.productName();
     }
 }
