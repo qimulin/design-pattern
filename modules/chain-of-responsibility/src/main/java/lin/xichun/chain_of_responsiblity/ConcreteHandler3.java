@@ -3,7 +3,7 @@ package lin.xichun.chain_of_responsiblity;
 /**
  * Created by Lin.XiChun on 2018/11/19.
  */
-public class ConcreteHandler2 extends Handler {
+public class ConcreteHandler3 extends Handler {
 
     /**
      * 请求处理方法，调用此方法处理请求

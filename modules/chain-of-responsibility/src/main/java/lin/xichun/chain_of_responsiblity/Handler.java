@@ -16,7 +16,7 @@ public abstract class Handler {
         return successor;
     }
 
-    // 根据具体需要来选择是否传递参数
-    public abstract void handleRequest(String judging);
+    // 处理
+    public abstract void handleRequest(String param);
 }
 
