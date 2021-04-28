@@ -1,4 +1,6 @@
 # GOF23种设计模式简介
+> 注意：设计模式中有些设计模式光看UML图会发现代码实现很像，所以，其实真正进行区分的还是业务场景，抽象出功能代码的业务，才能更好的表示，有时候也可能是多个设计模式进行结合。
+
 《Design Patterns: Elements of Reusable Object-Oriented Software》（即后述《设计模式》一书），由 Erich Gamma、Richard Helm、
 Ralph Johnson 和 John Vlissides 合著（Addison-Wesley，1995）。这几位作者常被称为"四人组（Gang of Four）"
 

@@ -1,6 +1,7 @@
 package lin.xichun.decorator;
 
 /**
+ * 装饰器通常是将主体设置进来，然后对他进行操作
  * Created by Lin.XiChun on 2018/10/24.
  */
 public abstract class Decorator extends Component {

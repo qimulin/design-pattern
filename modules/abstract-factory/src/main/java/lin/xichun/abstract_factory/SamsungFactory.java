@@ -8,7 +8,6 @@ public class SamsungFactory implements IFactory {
 
     public IAirCondition CreateAirCondition() {
         return new SamsungAirCondition(); // 三星的工厂生产三星的空调
-
     }
 
     public IFridge CreateFridge() {
