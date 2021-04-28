@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class PaymentService {
 
     @Autowired
-    ApplicationContext applicationContext;
+    private ApplicationContext applicationContext;
 
     public void pay(int newStatus, String msg) {
         PaymentInfo paymentInfo = new PaymentInfo(newStatus, msg);

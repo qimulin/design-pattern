@@ -6,6 +6,7 @@ package lin.xichun.memento;
  * Created by Lin.XiChun on 2018/11/23.
  */
 public class Originator {
+    // 这个目前只是一个属性state，实际使用中可以是多个属性
     private String state;
 
     public String getState() {

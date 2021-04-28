@@ -11,13 +11,16 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class MailPaymentStatusUpdateListener implements SmartApplicationListener {
+
     @Override
     public boolean supportsEventType(Class<? extends ApplicationEvent> eventType) {
+        // 仅支持类型为PaymentStatusUpdateEvent的事件
         return eventType == PaymentStatusUpdateEvent.class;
     }
 
     @Override
     public boolean supportsSourceType(Class<?> sourceType) {
+        // 仅支持类型为PaymentInfo的消息
         return sourceType == PaymentInfo.class;
     }
 

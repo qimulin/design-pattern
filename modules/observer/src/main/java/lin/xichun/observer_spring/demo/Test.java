@@ -13,7 +13,6 @@ public class Test {
         // 注意：spring2.xml对应各个Listener的@Async注解
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring2.xml");
         PaymentService paymentService = applicationContext.getBean(PaymentService.class);
-
         paymentService.pay(1, "支付成功");
     }
 
