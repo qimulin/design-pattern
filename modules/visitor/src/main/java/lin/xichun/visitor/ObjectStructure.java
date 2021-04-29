@@ -7,7 +7,7 @@ import java.util.Iterator;
  * 访问者可以遍历对象结构中的每个元素，并且每个元素里面要实现一个accept的方法，接受访问者访问
  * Created by Lin.XiChun on 2018/11/27.
  */
-public class ObjectStruture {
+public class ObjectStructure {
     private ArrayList<Element> list = new ArrayList<Element>(); // 定义一个集合用于存储元素对象
 
     public void accept(Visitor visitor) {

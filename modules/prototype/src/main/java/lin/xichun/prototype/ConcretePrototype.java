@@ -5,6 +5,17 @@ package lin.xichun.prototype;
  * 具体原型类
  */
 public class ConcretePrototype implements Prototype, Cloneable {
+
+    private Integer field;
+
+    public ConcretePrototype(Integer field){
+        this.field = field;
+    }
+
+    public void setField(Integer field) {
+        this.field = field;
+    }
+
     public ConcretePrototype clone() {
         // 使自己具有克隆的功能
         ConcretePrototype prototype = null;
@@ -17,6 +28,6 @@ public class ConcretePrototype implements Prototype, Cloneable {
     }
 
     public void show() {
-        System.out.println("ConcretePrototype1:{}" + this.toString());
+        System.out.println("ConcretePrototype:" + this.toString()+" field:"+field);
     }
 }

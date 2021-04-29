@@ -9,6 +9,7 @@ public class Client {
         // 客户端靠环境类对状态进行改变
         Context c = new Context();
         ConcreteStateA state = new ConcreteStateA();
+        // 不同的状态，对应的操作不一样
         c.setState(state);
         c.request();
         c.changeValue(1);

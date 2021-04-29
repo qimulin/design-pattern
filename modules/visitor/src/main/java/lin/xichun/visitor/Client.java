@@ -10,18 +10,18 @@ import java.util.Random;
  */
 public class Client {
     public static void main(String[] args) {
-        ObjectStruture objectStruture = new ObjectStruture();
+        ObjectStructure objectStructure = new ObjectStructure();
 
         Random ran = new Random();
         for (int i = 0; i < 10; i++) {
             int a = ran.nextInt(100);
             if (a > 50) {
-                objectStruture.addElement(new ConcreteElementA());
+                objectStructure.addElement(new ConcreteElementA());
             } else {
-                objectStruture.addElement(new ConcreteElementB());
+                objectStructure.addElement(new ConcreteElementB());
             }
         }
-        objectStruture.accept(new ConcreteVisitorA());
+        objectStructure.accept(new ConcreteVisitorA());
     }
 
 }
