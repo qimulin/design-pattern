@@ -7,6 +7,10 @@ package lin.xichun.decorator;
  * Created by Lin.XiChun on 2018/10/24.
  */
 public class ConcreteDecorator extends Decorator {
+
+    /**
+     * 相当于给Component添加了装饰
+     * */
     public ConcreteDecorator(Component component) {
         super(component);
     }
