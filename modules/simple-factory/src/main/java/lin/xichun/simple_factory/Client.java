@@ -9,6 +9,7 @@ import lin.xichun.common.IProduct;
 public class Client {
     public static void main(String[] args) {
         Factory factory = new Factory();
+        // 传入标识参数，内部自然能提供出你需要的对象类型
         IProduct productA = factory.create("A");
         productA.productName();
 
