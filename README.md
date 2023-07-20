@@ -48,7 +48,7 @@ GoF（“四人帮”，指Gamma, Helm, Johnson & Vlissides, Addison-Wesley四�
 - PROTOTYPE？印刷术的发明：以前只能临贴抄写费时费力，效率极低，有了印刷术，突突的； 
 - SINGLETON？确保唯一：不是靠new的，是靠instance的，而且要instance地全世界就这么一个实例(这可怜的类，也配叫“类”)。 看SingleTon类代码。
 
-### 2.结构型模式 
+### 2.结构型模式（structual patterns） 
 - ADAPTER？翻译官：胡哥只会汉语，布什只会美语，翻译官既通汉又通美，Adapter了 ；
 - DECORATOR？装饰：名字可以标识一个人，为了表示对一个人的尊重，一般会称其为“尊敬的”，有了装饰，好看多了； 
 - BRIDGE？白马非马：马之颜色有黑白，马之性别有公母。我们说"这是马"太抽象，说"这是黑色的公马"又太死板，只有将颜色与性别和马动态组合，"这是（黑色的或白色的）（公或母）马"才显得灵活而飘逸，如此bridge模式精髓得矣。 
