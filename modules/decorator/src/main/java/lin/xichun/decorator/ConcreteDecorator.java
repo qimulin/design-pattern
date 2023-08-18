@@ -15,6 +15,7 @@ public class ConcreteDecorator extends Decorator {
         super(component);
     }
 
+    @Override
     public void operation() {
         super.operation(); // 调用原有业务方法
         addedBehavior(); // 调用新增业务方法
