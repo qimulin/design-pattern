@@ -16,7 +16,7 @@ public class Client {
         shape.iColor = new Red();
         shape.draw(shape);
 
-        shape = new Circular();
+        shape = new Tirangle();
         shape.iColor = new Green();
         shape.draw(shape);
     }
